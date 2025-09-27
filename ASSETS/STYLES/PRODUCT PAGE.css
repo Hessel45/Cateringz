@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url('../IMAGES/156234-abstract-navy-blue-background.jpg') no-repeat center center    fixed;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+
+}
+
+/* NAVBAR */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    color: white;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    height: 50px;
+    border-bottom: 2px solid #ff9100;
+    backdrop-filter: blur(1px);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0.3rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a.active {
+    color: #ffffff;
+    border-bottom: 2px solid #ff9100;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+    border-bottom: 2px solid #ff9100;
+}
+
+/* Product Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    margin-top: 70px; /* Adjust based on navbar height */
+    margin-bottom: 100px; /* Add bottom margin to prevent overlap with footer */
+}
+
+.product-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.product-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Your existing CSS */
+/* Additions for modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    max-width: 80%;
+    animation: modal-show 0.3s ease;
+}
+
+@keyframes modal-show {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Your existing CSS */
+/* Additions for cart */
+.cart {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    position: fixed;
+    top: 70px; /* Adjust based on navbar height */
+    right: 20px;
+    width: 250px;
+    border: 2px solid #ff9100;
+}
+
+.cart h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Your existing CSS */
+
+/* Additions for footer */
+footer {
+    
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top: 2px solid #ff9100;
+    backdrop-filter: blur(1px);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Additions end */
+

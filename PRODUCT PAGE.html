@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering Page</title>
+    <link rel="stylesheet" href="ASSETS/STYLES/PRODUCT PAGE.css">
+    <link rel="stylesheet" href="ASSETS/STYLES/HOME PAGE.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="HOME PAGE.html">Home</a>
+            <a href="PRODUCT PAGE.html">Product</a>
+            <a href="TESTIMONIAL PAGE.html">Testimonial</a>
+            <a href="ABOUT US PAGE.html">About Us</a>
+            <a href="REGISTER PAGE.html">Register</a>
+        </div>
+    </nav>
+
+    <div class="gallery">
+        <div class="product-card" onclick="addToCart('Product 1', 10)">
+            <img src="ASSETS/IMAGES/Desain tanpa judul (17).png" alt="Product 1">
+            <h3>Product 1 - $10</h3>
+        </div>
+        <div class="product-card" onclick="addToCart('Product 2', 20)">
+            <img src="ASSETS/IMAGES/Desain tanpa judul (16).png" alt="Product 2">
+            <h3>Product 2 - $20</h3>
+        </div>
+        <div class="product-card" onclick="addToCart('Product 2', 30)">
+            <img src="ASSETS/IMAGES/Desain tanpa judul (12).png" alt="Product 3">
+            <h3>Product 3 - $30</h3>
+        </div>
+        <div class="product-card" onclick="addToCart('Product 2', 50)">
+            <img src="ASSETS/IMAGES/Desain tanpa judul (13).png" alt="Product 4">
+            <h3>Product 4 - $50</h3>
+        </div>
+        <div class="product-card" onclick="addToCart('Product 2', 60)">
+            <img src="ASSETS/IMAGES/Desain tanpa judul (14).png" alt="Product 5">
+            <h3>Product 5 - $60</h3>
+        </div>
+        <div class="product-card" onclick="addToCart('Product 2', 40)">
+            <img src="ASSETS/IMAGES/Desain tanpa judul (15).png" alt="Product 6">
+            <h3>Product 6 - $40</h3>
+        </div>
+        <!-- Add more product cards as needed -->
+    </div>
+
+    <div class="cart">
+        <h2>Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0</span></p>
+        <button onclick="resetCart()">Reset Cart</button>
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2024 CAteriNgz. All rights reserved.</p>
+    </footer>
+    
+    <script src="ASSETS/SCRIPTS/PRODUCT PAGE.js"></script>
+</body>
+</html>

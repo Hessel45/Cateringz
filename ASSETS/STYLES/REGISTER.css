@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('../IMAGES/156234-abstract-navy-blue-background.jpg') no-repeat center center    fixed;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0;
+}
+
+.container {
+    padding: 10px; /* Updated padding */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px; /* Updated max-width */
+    width: 100%;
+    background-color: rgba(29, 28, 28, 0.5);
+    color: #fff;
+    border: 1.5px solid #ff9100;
+    box-shadow: 0 2px 4px #ff9100;
+    backdrop-filter: blur(8px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea, select, button {
+    margin-bottom: 10px; /* Updated margin */
+    padding: 8px; /* Updated padding */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #ff9100;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+#errorMessages {
+    color: red;
+    font-size: 0.9em;
+}

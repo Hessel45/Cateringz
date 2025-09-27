@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url('../IMAGES/156234-abstract-navy-blue-background.jpg') no-repeat center center    fixed;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+
+}
+
+/* NAVBAR */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    color: white;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    height: 50px;
+    border-bottom: 2px solid #ff9100;
+    backdrop-filter: blur(1px);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0.3rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a.active {
+    color: #ffffff;
+    border-bottom: 2px solid #ff9100;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+    border-bottom: 2px solid #ff9100;
+}
+
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    transform: translateY(80px);
+    color: #fff;
+    border: 2px solid #ff9100;
+    backdrop-filter: blur(1px);
+    background: rgba(0, 0, 0, 0.5);
+    
+}
+
+.text-content {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.text-content h1 {
+    margin-top: 0;
+}
+
+.text-content p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.text-content .more-text {
+    display: none;
+}
+
+.read-more {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.image-content {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    text-align: center;
+    transform: translateY(-20px);
+    
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content, .image-content {
+        padding: 10px;
+    }
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+    border-top: 2px solid #ff9100;
+    backdrop-filter: blur(1px);
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content, .image-content {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 0.5rem;
+    }
+}
